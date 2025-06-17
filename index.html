@@ -510,18 +510,29 @@
       </div>
     </section>
 </main>
+  </section>
+
   <section id="Feedback" class="screen" tabindex="-1" aria-live="polite" aria-label="Feedback section">
-<section>
-      <h2 class="text-xl font-semibold mb-4">💬 Feedback</h2>
-      <form class="bg-white p-4 rounded-xl shadow space-y-4">
-        <input type="text" placeholder="Your name" class="w-full p-2 border rounded"/>
-        <textarea placeholder="Your feedback..." class="w-full p-2 border rounded h-24"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
-      </form>
-    </section>
-</body>
-</html>
-<footer>
+    <h2 class="section-title">Book Your Tickets</h2>
+    <form id="ticketForm" aria-describedby="formMessage" novalidate>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true" />
+
+      <label for="ticketType">Ticket Type</label>
+      <select id="ticketType" name="ticketType" required aria-required="true">
+        <option value="" disabled selected>Select a ticket type</option>
+        <option value="one-day">One-Day Ticket</option>
+        <option value="multi-day">Multi-Day Ticket</option>
+        <option value="annual-pass">Annual Pass</option>
+      </select>
+
+      <button type="submit" aria-live="polite">Book Now</button>
+      <div id="formMessage" role="alert" aria-live="assertive"></div>
+    </form>
+ <footer>
     <!-- Early Access Banner -->
 <div id="earlyAccessBanner" style="
   background-color: #fdec00;
