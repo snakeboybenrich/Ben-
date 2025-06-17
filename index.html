@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Disneyland Park | Theme Park</title>
 <style>
-<img src="3.PNG" alt="Disneyland Castle" class="w-full max-h-[500px] object-cover rounded-xl shadow-md mb-4">
-
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@700&display=swap');
 
   :root {
     --primary-blue: #f04029;
@@ -233,7 +232,7 @@
     color: red;
   }
 
-  /* Shows Cards */
+  /* Shows & Updates Cards */
   .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
@@ -378,26 +377,27 @@
   ⚠ We are working on the website, so there may be some issues. Please contact us if you need any help.
 </div>
 
+
+
 <li><a href="#" class="nav-link active" data-target="home" aria-current="page">Home</a></li>
     <li><a href="#" class="nav-link" data-target="attractions">Attractions</a></li>
-    <li><a href="#" class="nav-link" data-target="shows">shows</a></li>
-    <li><a href="#" class="nav-link" data-target="Updates">Updates</a></li>
+    <li><a href="#" class="nav-link" data-target="shows">Shows &amp; Updates</a></li>
     <li><a href="#" class="nav-link" data-target="tickets">Tickets</a></li>
     <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
-    <li><a href="#" class="nav-link" data-target="Applications">Applications</a></li>
     </ul>
 </nav>
 <main>
   <section id="home" class="screen active" tabindex="-1" aria-live="polite" aria-label="Home section">
-  <header class="hero" role="banner">
-    <div>
-        <h1>Welcome to Disneyland Park</h1>
+    <header class="hero" role="banner">
+      <div>
+        <h1>Welcome to Disneyland Resort</h1>
         <p>The happiest place on earth! Explore magical attractions, shows, and dining.</p>
         <a href="#" class="cta-btn" id="homeBookBtn">Book Tickets</a>
-        <img src="3.PNG" alt="Disneyland Castle" class="w-full max-h-[500px] object-cover rounded-xl shadow-md mb-4">
       </div>
-     </section>
- <section id="attractions" class="screen" tabindex="-1" aria-live="polite" aria-label="Attractions section">
+    </header>
+  </section>
+
+  <section id="attractions" class="screen" tabindex="-1" aria-live="polite" aria-label="Attractions section">
     <h2 class="section-title">Popular Attractions</h2>
     <ul class="list" role="list" aria-label="List of attractions">
       <li tabindex="0">Space Mountain</li>
@@ -408,44 +408,28 @@
     </ul>
   </section>
 
-  <section id="shows" class="screen" tabindex="-1" aria-live="polite" aria-label="Shows section">
-    <h2 class="section-title">shows</h2>
-    <div class="cards-container" role="list" aria-label="List of Shows">
+  <section id="shows" class="screen" tabindex="-1" aria-live="polite" aria-label="Shows and updates section">
+    <h2 class="section-title">Shows &amp; Updates</h2>
+    <div class="cards-container" role="list" aria-label="List of shows and updates">
       <article class="card" tabindex="0" role="listitem">
-        <h3>coming soon</h3>
+        <h3>Fantasmic! Night Show</h3>
         <time datetime="2025-06-20T21:00">June 20, 2025 - 9:00 PM</time>
-        <p>me to do here</p>
+        <p>Experience the spectacular nighttime show featuring fireworks, water effects, and beloved Disney characters.</p>
       </article>
       <article class="card" tabindex="0" role="listitem">
-        <h3>coming soon</h3>
+        <h3>Mickey's Magic Parade</h3>
         <time datetime="2025-06-22T15:00">June 22, 2025 - 3:00 PM</time>
-        <p>me to do here</p>
+        <p>Join Mickey and friends in a colorful parade filled with music, dancing, and magic along Main Street.</p>
       </article>
       <article class="card" tabindex="0" role="listitem">
-        <h3>coming soon</h3>
-        <time datetime="2025-06-25T12:30">June 25, 2025 - 12:30 PM</time>
-        <p>me to do here</p>
-      </article>
-    </div>
-  </section>
-
-<section id="Updates" class="screen" tabindex="-1" aria-live="polite" aria-label="Updates section">
-    <h2 class="section-title">Updates</h2>
-    <div class="cards-container" role="list" aria-label="List of Updates">
-      <article class="card" tabindex="0" role="listitem">
-        <h3>coming soon</h3>
-        <time datetime="2025-06-20T21:00">June 20, 2025 - 9:00 PM</time>
-        <p>me to do here</p>
-      </article>
-      <article class="card" tabindex="0" role="listitem">
-        <h3>coming soon</h3>
-        <time datetime="2025-06-22T15:00">June 22, 2025 - 3:00 PM</time>
-        <p>me to do here.</p>
+        <h3>Park Update: New Ride Opening</h3>
+        <time datetime="2025-07-01">July 1, 2025</time>
+        <p>Get ready for the grand opening of the "Galactic Voyage" ride! Opening ceremony at 10:00 AM.</p>
       </article>
       <article class="card" tabindex="0" role="listitem">
         <h3>Frozen Sing-Along</h3>
         <time datetime="2025-06-25T12:30">June 25, 2025 - 12:30 PM</time>
-        <p>me to do here</p>
+        <p>Sing along with Elsa, Anna, and Olaf in this interactive musical show suitable for all ages.</p>
       </article>
     </div>
   </section>
@@ -476,12 +460,9 @@
     <h2 class="section-title">Contact Us</h2>
     <p>For inquiries, email us at <a href="mailto:disneylandparkonroblox1@gmail.com">disneylandparkonroblox1@gmail.com</a> or coming soon.</p>
   </section>
-    <section id="Applications" class="screen" tabindex="-1" aria-live="polite" aria-label="Applications section">
-    <h2 class="section-title">Applications Us</h2>
-    <p>For inquiries, email us at <a href="mailto:disneylandparkonroblox1@gmail.com">disneylandparkonroblox1@gmail.com</a> or coming soon.</p>
- 
-  </main>
+</main>
 
+<footer>
     <!-- Early Access Banner -->
 <div id="earlyAccessBanner" style="
   background-color: #fdec00;
@@ -688,12 +669,5 @@
     color: red;
   }
 </style>
-
-
-
-
-
-
-
 
 
